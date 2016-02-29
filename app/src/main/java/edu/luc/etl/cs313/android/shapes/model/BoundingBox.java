@@ -17,13 +17,18 @@ public class BoundingBox implements Visitor<Location> {
 
 	@Override
 	public Location onFill(final Fill f) {
-		return null;
+		Location location;
+		final Shape shape = f.getShape();
+		return location;
 	}
 
 	@Override
 	public Location onGroup(final Group g) {
-
-		return null;
+		final iterator<extends Shape> it = g.getShapes().iterator();
+		int currentMaxX = 0;
+		int currentMaxy = 0;
+		int currentMinx = Integer.Max_Value;
+		int currentMiny = Integer.MAX_VALUE;
 	}
 
 	@Override
