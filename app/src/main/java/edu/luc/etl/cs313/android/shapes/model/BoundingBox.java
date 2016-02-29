@@ -30,7 +30,17 @@ public class BoundingBox implements Visitor<Location> {
 		int currentMinx = Integer.Max_Value;
 		int currentMiny = Integer.MAX_VALUE;
 
-		while(it.)
+		while(it.hasNext()){
+            final Location l = it.next().accept(this);
+            int x = l.getX();
+            itn y = l.getY();
+            int xPlusWidth = x;
+            int yPlusHeight = y;
+            if(l.getShape() instanceof Rectangle)
+            {
+                xPlusWidth += ((rectangle)l.getShape()).getWidth();
+            }
+        }
 	}
 
 	@Override
