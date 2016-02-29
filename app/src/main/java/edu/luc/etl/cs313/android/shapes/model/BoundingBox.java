@@ -29,6 +29,8 @@ public class BoundingBox implements Visitor<Location> {
 		int currentMaxy = 0;
 		int currentMinx = Integer.Max_Value;
 		int currentMiny = Integer.MAX_VALUE;
+
+		while(it.)
 	}
 
 	@Override
