@@ -1,12 +1,13 @@
 package edu.luc.etl.cs313.android.shapes.model;
 
+import static edu.luc.etl.cs313.android.shapes.model.Fixtures.*;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static edu.luc.etl.cs313.android.shapes.model.Fixtures.*;
+
 
 public class TestSize {
 
